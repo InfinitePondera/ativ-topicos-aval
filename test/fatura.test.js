@@ -48,4 +48,20 @@ describe('Fatura', () => {
 
         expect(faturas).toEqual(retornoEsperado);
     })
+    test('Fatura Entre 2500 e 3000 com data menor ou igual a dois meses atrás', () => {
+        var faturas = [
+            fatura1,
+            fatura2,
+            fatura3,
+            fatura4
+        ]
+
+        var retornoEsperado = [
+            fatura1
+        ]
+    
+        faturas = filtrarFaturaEntre3000e2500eData(faturas);
+
+        expect(faturas).toEqual(retornoEsperado);
+    })
 });
