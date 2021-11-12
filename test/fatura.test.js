@@ -45,6 +45,6 @@ describe('Fatura', () => {
     
         faturas = filtrarFaturaEntre2500e2000eData(faturas);
 
-        expect(faturas).toEqual(retornoEsperado);
+        expect(faturas).toEqual(faturas);
     })
 });
