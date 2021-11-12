@@ -22,12 +22,12 @@ describe('Fatura', () => {
         ]
 
         var retornoEsperado = [
-            fatura3,
-            fatura4
+            fatura1,
+            fatura2
         ]
     
         faturas = filtrarFaturaAcimaDeDoisMil(faturas);
 
-        expect(faturas).toEqual(faturas);
+        expect(faturas).toEqual(retornoEsperado);
     })
 });
